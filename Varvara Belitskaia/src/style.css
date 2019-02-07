@@ -1,0 +1,30 @@
+.pokemon-avatar {
+  max-width: 180px;
+}
+
+.pokemon-info-avatar {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.card-shadow { 
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); 
+}
+
+.spinner {
+  margin: 40vh 0 0;
+} 
+
+@media (max-width: 480px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px) {
+  .pokemon-avatar {
+    max-width: 150px;
+  }
+
+  .pokemon-info-card {
+    width: 90%;
+    padding: 0;
+  }
+  .pokemon-info-avatar {
+    max-width: 250px;
+  }
+}
