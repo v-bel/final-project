@@ -12,34 +12,38 @@ import { Spinner } from '../components/Spinner';
 
 class PokemonListContainer extends Component {
   componentDidMount() {
-    this.props.setInitialState();
-    this.props.fetchPokemons();
+    const { setInitialState, fetchPokemons } = this.props;
+    setInitialState();
+    fetchPokemons();
   }
 
   catchPoke(poke, e) {
+    const { catchPokemon } = this.props;
     e.preventDefault();
-    this.props.catchPokemon(poke);
+    catchPokemon(poke);
     e.target.setAttribute('disabled', true);
     e.target.textContent = 'You caught me ;)';
   }
 
   loadMore() {
-    this.props.incrementPageNumber();
-    this.props.fetchPokemons();
+    const { incrementPageNumber, fetchPokemons } = this.props;
+    incrementPageNumber();
+    fetchPokemons();
   }
 
   render() {
-    if (this.props.isFetching) {
+    const { isFetching, pokemonList, isLastPage } = this.props;
+    if (isFetching) {
       return <Spinner />;
     }
 
     return (
       <div className="d-flex flex-column">
         <PokemonList
-          pokemonList={this.props.pokemonList}
+          pokemonList={pokemonList}
           onClick={this.catchPoke.bind(this)}
         />
-        {!this.props.isLastPage ? (
+        {!isLastPage ? (
           <LoadMoreButton onClick={this.loadMore.bind(this)} />
         ) : null}
       </div>

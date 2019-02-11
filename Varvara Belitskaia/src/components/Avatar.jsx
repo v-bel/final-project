@@ -1,12 +1,12 @@
 /* eslint-disable import/prefer-default-export */
 import React from 'react';
 
-export const Avatar = props => {
+export const Avatar = ({ poke, isForInfoPage }) => {
   const src = `https://raw.githubusercontent.com/epam-js-dec-2018/final-project/master/pokemons/${
-    props.poke.id
+    poke.id
   }.png`;
-  const altText = `${props.poke.name}`;
-  const classNameValue = props.isForInfoPage
+  const altText = `${poke.name}`;
+  const classNameValue = isForInfoPage
     ? 'pokemon-info-avatar card-img-top'
     : 'pokemon-avatar';
   return (

@@ -62,7 +62,9 @@
     },
     {
       "name": "pidgey",
-      "id": 16
+      "id": 16,
+      "isCaught": true,
+      "date": "07/02/2019, 23:14:34"
     },
     {
       "name": "pidgeotto",
@@ -82,7 +84,9 @@
     },
     {
       "name": "spearow",
-      "id": 21
+      "id": 21,
+      "isCaught": true,
+      "date": "07/02/2019, 23:13:28"
     },
     {
       "name": "fearow",
@@ -150,7 +154,9 @@
     },
     {
       "name": "vulpix",
-      "id": 37
+      "id": 37,
+      "isCaught": true,
+      "date": "07/02/2019, 23:13:48"
     },
     {
       "name": "ninetales",
@@ -210,7 +216,9 @@
     },
     {
       "name": "meowth",
-      "id": 52
+      "id": 52,
+      "isCaught": true,
+      "date": "11/02/2019, 19:37:30"
     },
     {
       "name": "persian",
@@ -234,11 +242,15 @@
     },
     {
       "name": "growlithe",
-      "id": 58
+      "id": 58,
+      "isCaught": true,
+      "date": "07/02/2019, 23:11:26"
     },
     {
       "name": "arcanine",
-      "id": 59
+      "id": 59,
+      "isCaught": true,
+      "date": "07/02/2019, 23:15:51"
     },
     {
       "name": "poliwag",
@@ -314,7 +326,9 @@
     },
     {
       "name": "rapidash",
-      "id": 78
+      "id": 78,
+      "isCaught": true,
+      "date": "07/02/2019, 23:12:05"
     },
     {
       "name": "slowpoke",
@@ -400,7 +414,9 @@
     },
     {
       "name": "krabby",
-      "id": 98
+      "id": 98,
+      "isCaught": true,
+      "date": "07/02/2019, 23:11:40"
     },
     {
       "name": "kingler",
@@ -714,7 +730,9 @@
     },
     {
       "name": "togepi",
-      "id": 175
+      "id": 175,
+      "isCaught": true,
+      "date": "11/02/2019, 19:42:23"
     },
     {
       "name": "togetic",
@@ -950,7 +968,9 @@
     },
     {
       "name": "porygon2",
-      "id": 233
+      "id": 233,
+      "isCaught": true,
+      "date": "07/02/2019, 23:12:49"
     },
     {
       "name": "stantler",
@@ -1342,7 +1362,9 @@
     },
     {
       "name": "flygon",
-      "id": 330
+      "id": 330,
+      "isCaught": true,
+      "date": "11/02/2019, 22:50:20"
     },
     {
       "name": "cacnea",

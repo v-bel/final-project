@@ -1,6 +1,5 @@
 // fetch and promise for ie11
-import 'whatwg-fetch';
-import 'promise-polyfill/src/polyfill';
+import 'babel-polyfill';
 
 export const LIMIT = 40;
 

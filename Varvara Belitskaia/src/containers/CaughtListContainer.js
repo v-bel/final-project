@@ -11,24 +11,27 @@ import { Spinner } from '../components/Spinner';
 
 class CaughtListContainer extends Component {
   componentDidMount() {
-    this.props.setInitialState();
-    this.props.fetchCaught();
+    const { setInitialState, fetchCaught } = this.props;
+    setInitialState();
+    fetchCaught();
   }
 
   loadMore() {
-    this.props.incrementCaughtPageNumber();
-    this.props.fetchCaught();
+    const { incrementCaughtPageNumber, fetchCaught } = this.props;
+    incrementCaughtPageNumber();
+    fetchCaught();
   }
 
   render() {
-    if (this.props.isFetching) {
+    const { isFetching, isCaughtLastPage, caughtPokemonList } = this.props;
+    if (isFetching) {
       return <Spinner />;
     }
 
     return (
       <div className="d-flex flex-column">
-        <CaughtList caughtPokemonList={this.props.caughtPokemonList} />
-        {!this.props.isCaughtLastPage ? (
+        <CaughtList caughtPokemonList={caughtPokemonList} />
+        {!isCaughtLastPage ? (
           <LoadMoreButton onClick={this.loadMore.bind(this)} />
         ) : null}
       </div>

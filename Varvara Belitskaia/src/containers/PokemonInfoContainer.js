@@ -6,16 +6,18 @@ import { Spinner } from '../components/Spinner';
 
 class PokemonInfoContainer extends Component {
   componentDidMount() {
-    const id = this.props.match.params.id;
-    this.props.fetchPokemonInfo(id);
+    const { match, fetchPokemonInfo } = this.props;
+    const id = match.params.id;
+    fetchPokemonInfo(id);
   }
 
   render() {
-    if (this.props.isFetching) {
+    const { isFetching, pokemon } = this.props;
+    if (isFetching) {
       return <Spinner />;
     }
 
-    return <PokemonInfo poke={this.props.pokemon} />;
+    return <PokemonInfo poke={pokemon} />;
   }
 }
 

@@ -5,17 +5,17 @@ import { Avatar } from './Avatar';
 import { PokemonName } from './PokemonName';
 import { CatchButton } from './CatchButton';
 
-export const PokemonCard = props => {
+export const PokemonCard = ({ poke, onClick }) => {
   return (
     <div className="pokemon-card card-shadow card mb-3 mx-1 d-flex flex-column">
       <Link
         className="pokemon-info-link my-2 text-decoration-none text-reset"
-        to={`/pokemons/${props.poke.id}`}
+        to={`/pokemons/${poke.id}`}
       >
-        <Avatar poke={props.poke} />
-        <PokemonName name={props.poke.name} />
+        <Avatar poke={poke} />
+        <PokemonName name={poke.name} />
       </Link>
-      <CatchButton poke={props.poke} onClick={props.onClick} />
+      <CatchButton poke={poke} onClick={onClick} />
     </div>
   );
 };

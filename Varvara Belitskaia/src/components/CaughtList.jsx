@@ -2,8 +2,8 @@
 import React from 'react';
 import { PokemonCard } from './PokemonCard';
 
-export const CaughtList = props => {
-  const caughtPokemons = props.caughtPokemonList.map(poke => (
+export const CaughtList = ({ caughtPokemonList }) => {
+  const caughtPokemons = caughtPokemonList.map(poke => (
     <PokemonCard key={poke.id} poke={poke} />
   ));
   return (

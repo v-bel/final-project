@@ -2,14 +2,14 @@
 /* eslint-disable react/button-has-type */
 import React from 'react';
 
-export const CatchButton = props => {
+export const CatchButton = ({ poke, onClick }) => {
   return (
     <button
-      onClick={props.onClick}
-      disabled={props.poke.isCaught}
+      onClick={onClick}
+      disabled={poke.isCaught}
       className="btn btn-primary"
     >
-      {props.poke.isCaught ? 'You caught me ;)' : 'Catch'}
+      {poke.isCaught ? 'You caught me ;)' : 'Catch'}
     </button>
   );
 };
