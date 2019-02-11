@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the list of caught pokemons 1`] = `
+<div
+  className="pokemons-wrapper d-flex flex-wrap justify-content-around"
+>
+  <PokemonCard
+    key="25"
+    poke={
+      Object {
+        "date": "07/02/2019, 17:53:16",
+        "id": 25,
+        "isCaught": true,
+        "name": "pikachu",
+      }
+    }
+  />
+  <PokemonCard
+    key="30"
+    poke={
+      Object {
+        "date": "07/02/2019, 17:53:25",
+        "id": 30,
+        "isCaught": true,
+        "name": "nidorina",
+      }
+    }
+  />
+  <PokemonCard
+    key="37"
+    poke={
+      Object {
+        "date": "07/02/2019, 23:13:48",
+        "id": 37,
+        "isCaught": true,
+        "name": "vulpix",
+      }
+    }
+  />
+</div>
+`;

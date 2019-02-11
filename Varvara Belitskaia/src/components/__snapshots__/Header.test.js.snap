@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the header with navigation links 1`] = `
+<nav
+  className="navbar bg-light nav-pills justify-content-start mb-2"
+>
+  <NavLink
+    activeClassName="nav-link active"
+    aria-current="page"
+    className="nav-link"
+    exact={true}
+    to="/"
+  >
+    Pokemons
+  </NavLink>
+  <NavLink
+    activeClassName="nav-link active"
+    aria-current="page"
+    className="nav-link"
+    to="/caught"
+  >
+    My Pokemons
+  </NavLink>
+</nav>
+`;

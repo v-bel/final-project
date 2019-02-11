@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render the pokemon's avatar 1`] = `
+<img
+  alt="bulbasaur"
+  className="pokemon-avatar"
+  onError={[Function]}
+  src="https://raw.githubusercontent.com/epam-js-dec-2018/final-project/master/pokemons/1.png"
+/>
+`;
